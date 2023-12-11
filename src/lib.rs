@@ -1,4 +1,4 @@
-mod backend {
+pub mod backend {
     use std::fs::read_to_string;
     use std::path::PathBuf;
 
