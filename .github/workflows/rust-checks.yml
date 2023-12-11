@@ -31,6 +31,14 @@ jobs:
         shell: bash
         run: cargo fmt --all --check
 
+      - name: Run clippy
+        shell: bash
+        run: cargo clippy
+
+      - name: Run tests
+        shell: bash
+        run: cargo test
+
 # You can also use dedicated actions:
 # - https://github.com/actions-rs (popular, but abandoned recently)
 # - https://github.com/actions-rust-lang
